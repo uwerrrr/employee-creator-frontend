@@ -1,0 +1,70 @@
+@use "../../style/theme.scss";
+
+/* Loading message */
+.loading {
+  @include theme.loading();
+}
+
+/* Error message */
+.error {
+  @include theme.error();
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  // border: 1px solid #ccc;
+  border-radius: 10px;
+  // margin: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  width: 250px;
+
+  padding: 20px;
+
+  max-width: 100%;
+}
+
+/* Information section */
+.info {
+  margin: 10px 0 0 0;
+}
+
+/* Name */
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  // color: theme.$darkPurple;
+}
+
+/* Employment information */
+.employment {
+  margin: 10px 0;
+}
+
+/* Email */
+.email {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Actions section */
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+}
+
+/* Links */
+.link {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 7px;
+  &__delete {
+    color: #ff0000;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}

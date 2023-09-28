@@ -1,0 +1,25 @@
+@use "../../style/theme.scss";
+.error {
+  @include theme.error();
+}
+.loading {
+  @include theme.loading();
+}
+.page {
+  @include theme.page();
+}
+
+.pageHeading {
+  @include theme.pageHeading();
+}
+
+.backBtn {
+  @include theme.backBtn();
+}
+
+.backLink {
+  @include theme.backBtn();
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
